@@ -1,0 +1,77 @@
+# 🛡️ Nmap Security Dashboard
+
+Une application web professionnelle pour scanner des réseaux, détecter les ports ouverts, afficher les services actifs, et consulter l'historique complet des audits réalisés via l'outil Nmap.
+
+---
+
+## 🎯 Objectif
+
+Ce dashboard a pour but de centraliser les résultats de scans Nmap à travers une interface moderne et ergonomique. Il permet :
+
+- 🔍 La détection des ports ouverts d'une IP ou d'un nom de domaine
+- 📊 Un affichage clair des services, protocoles et versions
+- 🧾 Une consultation complète de l’historique des audits avec détails
+- 🔐 Un début d'intégration sécurité via traçabilité utilisateur
+
+---
+
+## 🖼️ Aperçu
+
+### Scanner
+
+![Scanner Screenshot](/nmap-dashboard.png)
+
+### Historique
+
+![Historique Screenshot](/nmap-history.png)
+
+---
+
+## ⚙️ Stack Technique
+
+| Frontend     | Backend       | Sécurité     | Analyse |
+|--------------|---------------|--------------|---------|
+| React.js     | Python Flask  | JWT (option) | Nmap    |
+| Tailwind CSS | MongoDB       | Logger IP    |         |
+| Framer Motion| Express Router|              |         |
+
+---
+
+## 🔧 Fonctionnalités
+
+- 🎯 **Scan ciblé** (IP ou domaine)
+- 🛠️ **Utilisation de Nmap** en arrière-plan pour l’audit réseau
+- 📥 **Enregistrement automatique** dans MongoDB
+- 📈 **Dashboard historique** avec filtres et vue détaillée
+- 🧑‍💻 **Traçabilité IP utilisateur** pour chaque scan
+
+---
+
+## 🚀 Lancer le projet en local
+
+### Prérequis :
+- Python 3.x
+- Node.js & npm
+- Nmap installé (`sudo apt install nmap`)
+
+### Étapes :
+
+```bash
+# Cloner le repo
+git clone https://github.com/votre-utilisateur/nmap-security-dashboard.git
+cd nmap-security-dashboard
+
+# Backend Flask
+cd backend
+pip install -r requirements.txt
+python app.py
+
+# Frontend React/Next.js
+cd ../frontend
+npm install
+npm run dev
+
+
+🤝 Auteur
+Ilyesse El Adaoui
+Développeur Fullstack & Cybersécurité
